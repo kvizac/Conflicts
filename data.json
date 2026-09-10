@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-10",
+  "reviewStatus": "Initial evidence review completed; coverage remains partial.",
+  "automation": {
+    "enabled": false,
+    "description": "Automatic updates are disabled. This website displays a dated evidence snapshot; future source reviews must be published as explicit updates."
+  },
+  "selection": {
+    "status": "historical-proxy",
+    "period": "2025-01-01/2025-12-31",
+    "scope": "Civilian fatalities from explosive weapons; AOAV reporting sample",
+    "target": "All direct civilian conflict deaths in a comparable rolling 12-month global dataset",
+    "nextReview": "2026-10-01"
+  },
+  "baselineSource": "https://aoav.org.uk/wp-content/uploads/2026/04/Explosive-Violence-Monitor-2025.pdf",
+  "conflicts": [
+    {
+      "id": "gaza",
+      "name": "Gaza / Israel",
+      "baselineLocation": "Gaza",
+      "rank": 1,
+      "deaths": 9002,
+      "injuries": 5009,
+      "incidents": 2530,
+      "sourcePages": "22–24",
+      "scope": "Baseline geography: Gaza only. This excludes civilian harm inside Israel and is not a whole-war balance sheet.",
+      "actors": [
+        {
+          "name": "Israeli armed forces",
+          "deaths": 9001,
+          "injuries": 5007,
+          "incidents": 2485,
+          "note": "AOAV attribution; deaths and injuries recorded in Gaza."
+        },
+        {
+          "name": "Hamas / other Palestinian armed groups",
+          "deaths": null,
+          "injuries": null,
+          "incidents": null,
+          "note": "No comparable civilian-harm total admitted here. Gaza-only coverage cannot measure harm to civilians in Israel."
+        },
+        {
+          "name": "Unknown / disputed",
+          "deaths": 1,
+          "injuries": 2,
+          "incidents": null,
+          "note": "Unattributed remainder explicitly reported by AOAV."
+        }
+      ],
+      "weapons": [
+        {
+          "name": "Air-launched weapons",
+          "deaths": 8011,
+          "injuries": 3742,
+          "incidents": 2194
+        },
+        {
+          "name": "Ground-launched weapons",
+          "deaths": 832,
+          "injuries": 1143,
+          "incidents": 250
+        }
+      ],
+      "note": "Broad launch classes overlap narrower weapon types; do not add them to subtype totals. Historical official launch claims appear in the evidence register with their own dates."
+    },
+    {
+      "id": "sudan",
+      "name": "Sudan",
+      "baselineLocation": "Sudan",
+      "rank": 2,
+      "deaths": 2705,
+      "injuries": 2735,
+      "incidents": 217,
+      "sourcePages": "24–25",
+      "scope": "Baseline geography: Sudan. The published non-state total combines forces and cannot be assigned entirely to the RSF.",
+      "actors": [
+        {
+          "name": "Sudanese Armed Forces (SAF)",
+          "deaths": 429,
+          "injuries": 255,
+          "incidents": null,
+          "note": "AOAV attribution; a compatible actor incident count is not admitted."
+        },
+        {
+          "name": "Rapid Support Forces (RSF)",
+          "deaths": null,
+          "injuries": null,
+          "incidents": null,
+          "note": "Included in the non-state aggregate below; separate total unavailable."
+        },
+        {
+          "name": "SPLM-N / other non-state forces",
+          "deaths": null,
+          "injuries": null,
+          "incidents": null,
+          "note": "Separate group total unavailable."
+        },
+        {
+          "name": "Non-state forces, combined",
+          "deaths": 2075,
+          "injuries": 2281,
+          "incidents": 152,
+          "note": "Includes RSF and SPLM-N; aggregate, not an additional fighting force."
+        },
+        {
+          "name": "Unknown / unresolved attribution",
+          "deaths": null,
+          "injuries": null,
+          "incidents": null,
+          "note": "Published attribution figures do not fully reconcile; no residual has been assigned."
+        }
+      ],
+      "weapons": [
+        {
+          "name": "Air-launched weapons",
+          "deaths": 1312,
+          "injuries": 966,
+          "incidents": 105
+        },
+        {
+          "name": "Ground-launched weapons",
+          "deaths": 1342,
+          "injuries": 1692,
+          "incidents": 108
+        }
+      ],
+      "note": "Source attribution subtotals do not fully reconcile with the conflict total. Preserve this discrepancy; do not invent a balancing category."
+    },
+    {
+      "id": "ukraine",
+      "name": "Ukraine / Russia",
+      "baselineLocation": "Ukraine",
+      "rank": 3,
+      "deaths": 2244,
+      "injuries": 12480,
+      "incidents": 3035,
+      "sourcePages": "19–20",
+      "scope": "Baseline geography: Ukraine, including occupied territory. It does not include civilian casualties inside Russia.",
+      "actors": [
+        {
+          "name": "Russian armed forces",
+          "deaths": null,
+          "injuries": null,
+          "incidents": 2980,
+          "note": "AOAV reports 14,525 civilian deaths and injuries combined; a separate death/injury split is not admitted here."
+        },
+        {
+          "name": "Ukrainian armed forces",
+          "deaths": null,
+          "injuries": null,
+          "incidents": 13,
+          "note": "AOAV reports 85 civilian deaths and injuries combined in Ukraine; separate split unavailable here."
+        },
+        {
+          "name": "Unknown / other actors",
+          "deaths": null,
+          "injuries": null,
+          "incidents": null,
+          "note": "No independently reconciled death/injury split admitted."
+        }
+      ],
+      "weapons": [
+        {
+          "name": "Air-launched weapons",
+          "deaths": 1136,
+          "injuries": 6424,
+          "incidents": 1791
+        },
+        {
+          "name": "Ground-launched weapons",
+          "deaths": null,
+          "injuries": null,
+          "incidents": 825
+        }
+      ],
+      "note": "OHCHR’s July 2026 weapon-specific figures appear separately below. They use a different period and method and are not combined with this AOAV baseline."
+    }
+  ],
+  "munitionPairs": [],
+  "reports": [
+    {
+      "id": "gaza-sep26-moh",
+      "conflict": "gaza",
+      "layer": "official",
+      "publisher": "OCHA",
+      "origin": "Gaza Ministry of Health",
+      "published": "2026-09-08",
+      "period": "26 August–2 September 2026",
+      "title": "31 reported deaths; civilian status not separated",
+      "summary": "OCHA relays 31 Palestinian deaths and 86 injuries reported by Gaza’s Ministry of Health. The count includes recovered bodies and deaths from earlier wounds.",
+      "verification": "Official casualty claim relayed by the UN. Not a verified civilian-only count or an event-date death count.",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-4-september-2026",
+      "quantities": [
+        {
+          "type": "reported_deaths_all_statuses",
+          "value": 31
+        },
+        {
+          "type": "reported_injuries_all_statuses",
+          "value": 86
+        }
+      ]
+    },
+    {
+      "id": "gaza-sep26-children",
+      "conflict": "gaza",
+      "layer": "independent",
+      "publisher": "OCHA / UNICEF",
+      "origin": "UNICEF reporting",
+      "published": "2026-09-08",
+      "period": "23 August–2 September 2026",
+      "title": "Seven children reportedly killed",
+      "summary": "OCHA relays UNICEF reporting on seven child deaths. This is a reported demographic subset, not a separate total to add to the Ministry of Health figure.",
+      "verification": "UN reporting; case-level independent verification not established in this register.",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-4-september-2026",
+      "quantities": [
+        {
+          "type": "reported_child_deaths",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "id": "gaza-aug26-idf",
+      "conflict": "gaza",
+      "layer": "official",
+      "publisher": "OCHA",
+      "origin": "Israeli authorities",
+      "published": "2026-09-08",
+      "period": "29 August 2026",
+      "title": "Israel states hospital-compound strike targeted a Hamas commander",
+      "summary": "OCHA records the Israeli explanation for a reported drone strike at the Al Aqsa Hospital compound. No compatible munition count or civilian toll is established here.",
+      "verification": "Official targeting claim, not independent confirmation of the target.",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-4-september-2026",
+      "quantities": []
+    },
+    {
+      "id": "ukraine-jul26-ohchr",
+      "conflict": "ukraine",
+      "layer": "independent",
+      "publisher": "OHCHR / HRMMU",
+      "origin": "UN Human Rights Monitoring Mission in Ukraine",
+      "published": "2026-08-12",
+      "period": "1–31 July 2026",
+      "title": "437 civilians killed; 2,610 injured",
+      "summary": "UN-verified monthly figures include occupied territory. Weapon-specific deaths: missiles and long-range drones 183; aerial bombs 105; short-range drones 111. These categories do not provide munitions fired.",
+      "verification": "UN-verified minimum; territorial access constraints mean incomplete coverage. Aggregate figures are not automatically assigned to one force.",
+      "url": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-July-2026",
+      "quantities": [
+        {
+          "type": "civilian_deaths",
+          "value": 437
+        },
+        {
+          "type": "civilian_injuries",
+          "value": 2610
+        },
+        {
+          "type": "civilian_deaths_missiles_long_range_drones",
+          "value": 183
+        },
+        {
+          "type": "civilian_deaths_aerial_bombs",
+          "value": 105
+        },
+        {
+          "type": "civilian_deaths_short_range_drones",
+          "value": 111
+        }
+      ]
+    },
+    {
+      "id": "russia-h126-claim",
+      "conflict": "ukraine",
+      "layer": "official",
+      "publisher": "Reuters",
+      "origin": "Russian authorities, relayed by UN official",
+      "published": "2026-07-09",
+      "period": "January–June 2026",
+      "title": "Russia reports 250 civilians killed inside Russia",
+      "summary": "Russian authorities reported 250 civilian deaths and 1,596 injuries. Reuters reports that the UN could not verify these figures.",
+      "verification": "Official claim. Different territory and period from the Ukraine baseline; not directly comparable.",
+      "url": "https://www.reuters.com/world/un-agency-says-russian-strikes-killed-least-265-civilians-ukraine-june-2026-07-09/",
+      "quantities": [
+        {
+          "type": "claimed_civilian_deaths",
+          "value": 250
+        },
+        {
+          "type": "claimed_civilian_injuries",
+          "value": 1596
+        }
+      ]
+    },
+    {
+      "id": "sudan-may26-ohchr",
+      "conflict": "sudan",
+      "layer": "independent",
+      "publisher": "Associated Press",
+      "origin": "UN High Commissioner for Human Rights",
+      "published": "2026-06-15",
+      "period": "January–May 2026",
+      "title": "UN reports more than 1,000 civilians killed by drone strikes",
+      "summary": "AP reports the UN rights chief’s documented toll. The available statement does not provide a compatible count of drones fired or a force-by-force breakdown.",
+      "verification": "UN documentation relayed by independent media; underlying case dataset not available here.",
+      "url": "https://apnews.com/article/88f883750a3846c237fa3a62add55d7f",
+      "quantities": [
+        {
+          "type": "civilian_drone_deaths",
+          "value": 1000,
+          "qualifier": "more_than"
+        }
+      ]
+    },
+    {
+      "id": "gaza-oct24-rockets",
+      "conflict": "gaza",
+      "layer": "official",
+      "publisher": "Reuters",
+      "origin": "Israeli military",
+      "published": "2024-10-07",
+      "period": "7 October 2023–7 October 2024 (anniversary report)",
+      "title": "Historical claim: 13,200 rockets fired from Gaza",
+      "summary": "Reuters relays the Israeli military’s count of rockets fired toward Israel from Gaza. The same briefing reports 40,000 targets struck in Gaza; targets are not munitions.",
+      "verification": "Official military claims; no matching civilian-only numerator admitted. Excluded from the 2025 comparison.",
+      "url": "https://www.reuters.com/world/middle-east/one-year-war-israel-strikes-40000-hamas-targets-gaza-2024-10-07/",
+      "quantities": [
+        {
+          "type": "claimed_rockets_fired",
+          "value": 13200
+        },
+        {
+          "type": "claimed_targets_struck",
+          "value": 40000
+        }
+      ]
+    }
+  ],
+  "reviewLog": [
+    {
+      "date": "2026-09-10",
+      "result": "Initial source review. AOAV 2025 baseline and seven distinct evidence records admitted. Current global ranking and matched munition denominators remain unresolved."
+    }
+  ]
+}
