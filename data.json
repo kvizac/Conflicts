@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "reviewedAt": "2026-09-10",
-  "reviewStatus": "Initial evidence review completed; coverage remains partial.",
+  "reviewStatus": "Expanded review: authority-reported totals, UN civilian counts, durations and documented launches. Source periods differ.",
   "automation": {
     "enabled": false,
     "description": "Automatic updates are disabled. This website displays a dated evidence snapshot; future source reviews must be published as explicit updates."
@@ -62,7 +62,18 @@
           "incidents": 250
         }
       ],
-      "note": "Broad launch classes overlap narrower weapon types; do not add them to subtype totals. Historical official launch claims appear in the evidence register with their own dates."
+      "note": "Broad launch classes overlap narrower weapon types; do not add them to subtype totals. Historical official launch claims appear in the evidence register with their own dates.",
+      "headline": {
+        "value": 73000,
+        "qualifier": ">",
+        "label": "reported Palestinian deaths · all statuses",
+        "start": "2023-10-07",
+        "end": "2026-09-10",
+        "conflictStart": "2023-10-07",
+        "source": "Palestinian health authorities / Gaza Ministry of Health, via Reuters",
+        "url": "https://www.reuters.com/world/middle-east/israeli-strike-kills-parents-two-children-gaza-medics-say-2026-09-10/",
+        "note": "Rounded lower threshold reported by Reuters, not an exact ministry total. Civilian and combatant deaths are not separated. Covers Gaza since 7 October 2023; not all earlier phases of the conflict."
+      }
     },
     {
       "id": "sudan",
@@ -125,7 +136,18 @@
           "incidents": 108
         }
       ],
-      "note": "Source attribution subtotals do not fully reconcile with the conflict total. Preserve this discrepancy; do not invent a balancing category."
+      "note": "Source attribution subtotals do not fully reconcile with the conflict total. Preserve this discrepancy; do not invent a balancing category.",
+      "headline": {
+        "value": 1000,
+        "qualifier": ">",
+        "label": "civilian deaths from drones · Jan–May 2026",
+        "start": "2026-01-01",
+        "end": "2026-05-31",
+        "conflictStart": "2023-04-15",
+        "source": "UN human rights chief, via Associated Press",
+        "url": "https://apnews.com/article/88f883750a3846c237fa3a62add55d7f",
+        "note": "A five-month, drone-specific documented minimum. This is not Sudan’s cumulative death toll and excludes other weapons. No complete nationwide cumulative civilian total established here."
+      }
     },
     {
       "id": "ukraine",
@@ -174,7 +196,18 @@
           "incidents": 825
         }
       ],
-      "note": "OHCHR’s July 2026 weapon-specific figures appear separately below. They use a different period and method and are not combined with this AOAV baseline."
+      "note": "OHCHR’s July 2026 weapon-specific figures appear separately below. They use a different period and method and are not combined with this AOAV baseline.",
+      "headline": {
+        "value": 16874,
+        "qualifier": "≥",
+        "label": "UN-verified civilian deaths · cumulative",
+        "start": "2022-02-24",
+        "end": "2026-07-31",
+        "conflictStart": "2022-02-24",
+        "source": "OHCHR / HRMMU · July 2026 update, page 4",
+        "url": "https://ukraine.ohchr.org/sites/default/files/2026-08/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28July%29_ENG.pdf",
+        "note": "Verified minimum in Ukraine, including occupied territory. Actual civilian deaths are higher. Coverage starts with the full-scale invasion, not the war’s 2014 origin; deaths inside Russia are separate."
+      }
     }
   ],
   "munitionPairs": [],
@@ -341,6 +374,46 @@
     {
       "date": "2026-09-10",
       "result": "Initial source review. AOAV 2025 baseline and seven distinct evidence records admitted. Current global ranking and matched munition denominators remain unresolved."
+    },
+    {
+      "date": "2026-09-10",
+      "result": "Version 2: replaced headline AOAV sample with authority/UN figures; added inclusive reporting durations and daily rates; exposed launch counts independently of ratio availability. Retained 2025 attribution sample as historical context."
+    }
+  ],
+  "version": "2.0",
+  "launches": [
+    {
+      "conflict": "gaza",
+      "actor": "Palestinian armed groups → Israel",
+      "weapon": "Rockets",
+      "value": 13200,
+      "start": "2023-10-07",
+      "end": "2024-10-07",
+      "source": "Israeli military, via Reuters",
+      "url": "https://www.reuters.com/world/middle-east/one-year-war-israel-strikes-40000-hamas-targets-gaza-2024-10-07/",
+      "note": "Historical anniversary claim. Rounded count; daily average uses 367 inclusive calendar days. No compatible civilian-death numerator for rockets into Israel."
+    },
+    {
+      "conflict": "ukraine",
+      "actor": "Russian forces → Ukraine",
+      "weapon": "Drones",
+      "value": 166,
+      "start": "2026-09-08",
+      "end": "2026-09-08",
+      "source": "Ukrainian Air Force, via Financial Times",
+      "url": "https://www.ft.com/content/0815cd34-bf4c-4771-8bf5-710eff286763",
+      "note": "Overnight attack reported 8 September; 145 reportedly intercepted. Decoy split not established. One attack window, not a monthly average."
+    },
+    {
+      "conflict": "ukraine",
+      "actor": "Russian forces → Ukraine",
+      "weapon": "Cruise missiles",
+      "value": 32,
+      "start": "2026-09-08",
+      "end": "2026-09-08",
+      "source": "Ukrainian Air Force, via Financial Times",
+      "url": "https://www.ft.com/content/0815cd34-bf4c-4771-8bf5-710eff286763",
+      "note": "31 reportedly intercepted. Two ballistic interceptions also reported, but do not establish the ballistic launch total."
     }
   ]
 }

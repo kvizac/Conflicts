@@ -21,3 +21,6 @@ Matched deaths-per-munition ratios are withheld until compatible civilian-only, 
 No scheduled task, cron job or scheduled workflow is enabled. The site displays the evidence snapshot in `data.json`. Update this file only after checking original sources, report dates, observation periods, definitions, revisions and overlaps. Preserve unknown values as null; do not add overlapping totals or treat total deaths as civilian-only deaths. Update the review timestamp only after a substantive review.
 
 Relative asset URLs support the /Conflicts/ project path. `.nojekyll` tells GitHub Pages to serve the static files directly.
+
+## Version 2 evidence correction
+Headlines now use Palestinian authority reporting for Gaza, UN-verified cumulative civilian deaths for Ukraine, and a clearly limited UN drone-death period for Sudan. Gaza is a rounded greater-than-73,000 threshold, not an exact total or a civilian-only estimate. Reporting-window averages use inclusive UTC calendar days; phase duration is a separate measure. Official launch records are displayed independently of ratio eligibility. No schedules were added.
